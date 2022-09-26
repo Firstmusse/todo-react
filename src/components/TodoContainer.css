@@ -1,0 +1,54 @@
+.todo{
+    position: relative;
+    height: 100vh;
+    background-color: rgb(252, 238, 217);
+}
+
+.todo-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 300px;
+    min-height: 280px;
+    border-radius: 6px;
+}
+
+
+.todo-input-block{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo-input-block::before{
+    position: absolute;
+    content: '';
+    position: absolute;
+    bottom: 5px;
+        left: 20px;
+        width: 13px;
+        height: 13px;
+    background: url('../icons/search.svg') no-repeat;
+    background-size: cover;
+}
+
+.todo-input{
+ border: 0.5px solid rgba(0, 0, 0, 0.404);   
+ border-radius: 2px;
+ outline: none;
+ height: 20px;
+ width: 80%;
+ padding-left: 25px;
+ margin-top: 15px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.todo-input::placeholder{
+    font-size: 8px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.274);
+    padding-bottom: 4px;
+}
