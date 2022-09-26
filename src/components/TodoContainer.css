@@ -1,9 +1,12 @@
 .todo{
     position: relative;
     height: 100vh;
-    background-color: rgb(252, 238, 217);
+    background-color: rgb(214, 183, 137);
 }
-
+.todo-content{
+    width: 90%;
+    margin: 0 auto;
+}
 .todo-container{
     position: absolute;
     top: 50%;
@@ -27,7 +30,7 @@
     content: '';
     position: absolute;
     bottom: 5px;
-        left: 20px;
+        left: 5px;
         width: 13px;
         height: 13px;
     background: url('../icons/search.svg') no-repeat;
@@ -39,7 +42,7 @@
  border-radius: 2px;
  outline: none;
  height: 20px;
- width: 80%;
+ width: 90%;
  padding-left: 25px;
  margin-top: 15px;
  display: flex;
@@ -51,4 +54,49 @@
     font-weight: 600;
     color: rgba(0, 0, 0, 0.274);
     padding-bottom: 4px;
+}
+
+.todo-link{
+    font-size: 10px;
+    color: rgb(53, 53, 53);
+}
+.todo-link:hover{
+    color: rgb(120, 120, 236);
+}
+
+
+.todo-link-block a:not(:first-child){
+    margin-left: 10px;
+}
+
+.todo-trash-block{
+    width: 20px;
+    height: 20px;
+}
+.todo-click-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 10px 0
+}
+.todo-trash-block{
+    
+}
+.todo-trash{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(209, 233, 202, 0.801);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.todo-trash-block img{
+    width: 12px;
+    height: 12px;
+}
+.todo-content-wrapper{
+   border-bottom: 0.5px solid rgba(0, 0, 0, 0.432);
+   width: 100%;
 }
