@@ -100,3 +100,7 @@
    border-bottom: 0.5px solid rgba(0, 0, 0, 0.432);
    width: 100%;
 }
+.todo-list{
+    width: 90%;
+    margin: 0 auto;
+}
