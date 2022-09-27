@@ -18,6 +18,11 @@ function TodoContainer() {
        
     }
 
+    const handleRemove = (id) =>{
+      setInputValue(inputValue => inputValue.filter((elem)=> elem.id !== id)
+        )
+    }
+
     // console.log(inputValue);
 
   return (
@@ -51,7 +56,10 @@ function TodoContainer() {
             <div className="todo-list">
                 <TodoList 
                 key={Date.now().toString()} 
-                item={inputValue}/>
+                item={inputValue}
+                handleRemove={handleRemove }
+                />
+                
             </div>
         </div>
     </div>

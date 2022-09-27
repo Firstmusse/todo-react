@@ -3,7 +3,8 @@ import edit from '../icons/edit.svg'
 
 import './TodoItem.css'
 
-function TodoItem({id, value}) {
+function TodoItem({id, value , handleRemove}) {
+    // console.log(handleRemove);
   return (
     <li className="todo-item">
         <p>{value}</p>
@@ -15,7 +16,10 @@ function TodoItem({id, value}) {
 
     <span className='todo-icon-delet'>
         <img className='icon-press' 
-        src={cancel} alt="#" />
+        src={cancel} alt="#" 
+        onClick={() => handleRemove(id)}
+        
+        />
     </span>
     </div>
     </li>
